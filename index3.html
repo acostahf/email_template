@@ -4,6 +4,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
 <title></title>
 <style type="text/css">
 	body {
@@ -25,6 +27,20 @@
         background-color: #cccccc;
         padding-bottom: 40px;
     }
+    .two-columns{
+        text-align: center;
+        font-size: 0;
+        padding: 40px 0;
+    }
+    .two-columns .column {
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        font-size: 18px;
+        padding-bottom: 40px;
+
+    }
     .main{
         background-color: #ffffff;
         margin: 0 auto;
@@ -45,8 +61,8 @@
 <center class="wrapper" >
     <table class="main" width="100%">
 <tr>
-    <td height="160" style="background-color: #ffffff;">
-<p class="banner" style="text-align: center; color: rgb(95, 0, 248);font-weight: 400;font-size: xx-large;">
+    <td height="100" style="background-color: #ffffff;">
+<p class="banner" style="text-align: center;padding: 0; color: rgb(95, 0, 248);font-weight: 400;font-size: xx-large;">
     Queenly
 </p>
 <p>
@@ -59,9 +75,9 @@
 
     <tr>
         <td>
-            <table width="100%">
+            <table width="100%" style="padding: 10px 60px;">
                 <tr>
-                    <td style="text-align: center;padding-left: 60px; color: rgb(95, 0, 248);font-weight: 400;" >
+                    <td style="text-align: center; color: rgb(95, 0, 248);font-weight: 400;" >
                         <p>Partners</p>
                         
                     </td>
@@ -73,13 +89,68 @@
                         <p>Become a seller</p>
                         
                     </td>
-                    <td style="text-align: center;padding-right: 60px; color: rgb(95, 0, 248);font-weight: 400;" >
+                    <td style="text-align: center; color: rgb(95, 0, 248);font-weight: 400;" >
                         <p>About</p>
                         
                     </td>
                 </tr>
               
             </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <table width="100%">
+                <tr>
+                    <td class="two-columns">
+
+                        <table class="column">
+                            <tr>
+                                <td style="width: 200px;height: 300px;max-height: 300px;  margin: 0;background-color: rgb(218, 212, 212);">
+                                   
+                                   <p class="text-purple-600 text-lg font-semibold" >
+                                       Side Slit Formal
+                                   </p>
+                                   <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quos quam ratione hic est ullam impedit nulla in quibusdam vero. Ducimus eligendi quo asperiores, nobis adipisci doloremque explicabo consequatur corporis?</p>
+                                   <p>More Details</p>
+                                   <button class="bg-purple-600  rounded-lg text-white font-semibold text-md"><p class="text-sm">
+                                       BUY NOW
+                                   </p></button>
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td>
+                                    
+                                    <a href="..."></a><img  src="https://picsum.photos/200/300" style="width: 200px;height: 300px;"></a>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="column">
+                            <tr>
+                                <td>
+                                    
+                                    <a href="..."></a><img  src="https://picsum.photos/200/300" style="width: 200px;height: 300px;"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 200px;height: 300px;max-height: 300px;  margin: 0;background-color: rgb(218, 212, 212);">
+                                   
+                                   <p class="text-purple-600 text-lg font-semibold" >
+                                       Side Slit Formal
+                                   </p>
+                                   <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quos quam ratione hic est ullam impedit nulla in quibusdam vero. Ducimus eligendi quo asperiores, nobis adipisci doloremque explicabo consequatur corporis?</p>
+                                   <p>More Details</p>
+                                   <button class="bg-purple-600  rounded-lg text-white font-semibold text-md"><p class="text-sm">
+                                       BUY NOW
+                                   </p></button>
+                                </td> 
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
         </td>
     </tr>
 
